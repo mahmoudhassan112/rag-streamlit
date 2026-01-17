@@ -54,7 +54,7 @@ def submit():
     # Call FastAPI
     try:
         response = requests.post(
-            "http://127.0.0.1:8000/get-answer",
+            "fastapi-rag-production-a70a.up.railway.app/get-answer",
             json={"query": user_input},
             timeout=10
         )
